@@ -6,7 +6,7 @@ public:
     int lengthAfterTransformations(string s, int t) {
         int nums[26] = {0};
         for (char ch : s) nums[ch - 'a']++;
-        while (t--) {
+        while (t--) { 
             int cur[26] = {0};
             for (int j = 0; j < 26; j++) {
                 if (j == 25 && nums[j] > 0) {
