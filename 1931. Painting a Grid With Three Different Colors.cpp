@@ -3,7 +3,7 @@ public:
     const int mod = 1e9 + 7;
     int dp[1005][250], rowValid[250][250];
     vector<int> good, pattern [250];
-    int colorTheGrid(int m, int n) {
+    int colorTheGrid(int m, int n) { 
         int total = pow(3, m);
 
         for (int i = 0; i < total; i++) {
