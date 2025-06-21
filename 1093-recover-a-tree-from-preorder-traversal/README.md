@@ -1,7 +1,7 @@
 <h2><a href="https://leetcode.com/problems/recover-a-tree-from-preorder-traversal">Recover a Tree From Preorder Traversal</a></h2> <img src='https://img.shields.io/badge/Difficulty-Hard-red' alt='Difficulty: Hard' /><hr><p>We run a&nbsp;preorder&nbsp;depth-first search (DFS) on the <code>root</code> of a binary tree.</p>
 
 <p>At each node in this traversal, we output <code>D</code> dashes (where <code>D</code> is the depth of this node), then we output the value of this node.&nbsp; If the depth of a node is <code>D</code>, the depth of its immediate child is <code>D + 1</code>.&nbsp; The depth of the <code>root</code> node is <code>0</code>.</p>
-
+ 
 <p>If a node has only one child, that child is guaranteed to be <strong>the left child</strong>.</p>
 
 <p>Given the output <code>traversal</code> of this traversal, recover the tree and return <em>its</em> <code>root</code>.</p>
