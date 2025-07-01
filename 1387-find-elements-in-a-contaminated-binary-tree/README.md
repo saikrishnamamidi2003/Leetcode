@@ -3,7 +3,7 @@
 <ol>
 	<li><code>root.val == 0</code></li>
 	<li>For any <code>treeNode</code>:
-	<ol type="a">
+	<ol type="a"> 
 		<li>If <code>treeNode.val</code> has a value <code>x</code> and <code>treeNode.left != null</code>, then <code>treeNode.left.val == 2 * x + 1</code></li>
 		<li>If <code>treeNode.val</code> has a value <code>x</code> and <code>treeNode.right != null</code>, then <code>treeNode.right.val == 2 * x + 2</code></li>
 	</ol>
