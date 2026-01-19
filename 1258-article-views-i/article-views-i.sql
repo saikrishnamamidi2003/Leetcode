@@ -2,7 +2,8 @@
 select distinct author_id as id
 from Views
 
-where(
+where (
     author_id = viewer_id
 )
-order by id;
+
+Order By id
