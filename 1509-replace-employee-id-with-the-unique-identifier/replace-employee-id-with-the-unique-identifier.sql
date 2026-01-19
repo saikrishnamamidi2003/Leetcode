@@ -1,5 +1,11 @@
 # Write your MySQL query statement below
-select euni.unique_id ,e.name
-from Employees e
-left join EmployeeUNI euni
-on  e.id = euni.id;
+-- LEFT JOIN (or LEFT OUTER JOIN)
+
+-- Returns all rows from the left table , and matching rows from the right table .
+
+-- If no match → NULL is shown for right table.
+
+select empun.unique_id, emp.name
+from Employees emp
+Left join EmployeeUNI empUn
+on emp.id = empUn.id
