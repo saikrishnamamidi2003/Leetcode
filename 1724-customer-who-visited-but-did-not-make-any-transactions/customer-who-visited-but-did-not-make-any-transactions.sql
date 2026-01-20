@@ -14,7 +14,7 @@ where (
        select visit_id from Transactions 
     )
 )
-Group By customer_id 
+ Group By customer_id 
 -- select customer_id, count(visit_id) as count_no_trans
 -- from Visits
 -- where (
