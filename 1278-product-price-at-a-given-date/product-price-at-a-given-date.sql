@@ -1,16 +1,15 @@
 # Write your MySQL query statement below
-SELECT 
-    p.product_id,
-    COALESCE(
-        (
-            SELECT new_price
-            FROM Products p2
-            WHERE p2.product_id = p.product_id
-              AND change_date <= '2019-08-16'
-            ORDER BY change_date DESC
-            LIMIT 1
-        ),
-        10
-    ) AS price
-FROM Products p
-GROUP BY p.product_id;
+select product_id, coalesce(
+    (
+    select new_price
+    from Products p2
+    where
+        p2.product_id = p.product_id and
+        change_date <= '2019-08-16'
+    order By change_date desc
+    Limit 1
+    
+    ),10
+)as price
+from Products p
+group by p.product_id
